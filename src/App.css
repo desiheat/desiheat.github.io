@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wrapper {
+  padding: 20px
+}
+body {
+  /*background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/45degreee_fabric.png");*/
+  /*background-repeat: repeat;*/
+
+  background: #A88FAC;
+
+  /*background: darkgreen;*/
+  font-family: Arial;
+  text-align: center;
+}
+.mainpagecontainer {
+  position: relative;
+  top:200px;
+}
+.buttonpad {
+  background-color: #f5844f;
+  margin: 5px;
+  border-color: #f5844f;
+  color: #6b12f9;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: #6b12f9;
+  background-color:#f5844f;
+  border-color: #f5844f;
+}
+.btn:hover {
+  color: #6b12f9;
+  background-color: #f5734f;
+  border-color: #f5734f;
+
+}
+.blob-online {
+  padding:unset;
+  background: green;
+  border-radius: 50%;
+  margin: 10px;
+  height: 12px;
+  width: 12px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse-green 1s infinite;
+}
+.blob-offline {
+  padding:unset;
+  background: darkred;
+  border-radius: 50%;
+  margin: 10px;
+  height: 12px;
+  width: 12px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+}
+
+/*.blob.green {*/
+/*  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);*/
+/*  animation: pulse-green 2s infinite;*/
+/*}*/
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+  }
+}
